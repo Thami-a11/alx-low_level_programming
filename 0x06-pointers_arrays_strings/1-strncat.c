@@ -12,11 +12,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i, j = 0;
 
-	if (dest == 0 || src == 0)
-	{
-		return (0);
-	}
-
 	while (dest[i] != 0)
 	{
 		i++;
