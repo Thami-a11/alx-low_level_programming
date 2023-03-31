@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  *cap_string - all lowercase letters
