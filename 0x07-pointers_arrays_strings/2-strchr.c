@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strchr - search for char in string
@@ -16,11 +17,11 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			return (c);
+			return (s[i]);
 		}
 		else
 		{
-			return (0);
+			return (NULL);
 		}
 	}
 }
