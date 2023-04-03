@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _strpbrk - search for string of any byte
  * @s: string parameter
