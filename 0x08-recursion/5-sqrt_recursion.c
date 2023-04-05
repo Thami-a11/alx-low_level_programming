@@ -11,8 +11,8 @@ int helperFunc(int n, int c)
 {
 	if (c * c > n)
 		return (-1);
-	else if
-		(c * c == n)
+	else if (c * c == n)
+		return (c);
 	return (helperFunc(n, c + 1));
 }
 
