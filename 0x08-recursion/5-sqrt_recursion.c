@@ -12,7 +12,7 @@ int helperFunc(int n, int c)
 	if (c * c > n)
 		return (-1);
 	else if
-		(c * c == n);
+		(c * c == n)
 	return (helperFunc(n, c + 1));
 }
 
