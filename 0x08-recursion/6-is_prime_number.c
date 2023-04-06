@@ -27,5 +27,5 @@ int helperFunc(int n, int i)
 	}
 	else if (n % i == 0)
 		return (0);
-	return (is_prime_number_helper(n, i + 1));
+	return (helperFunc(n, i + 1));
 }
