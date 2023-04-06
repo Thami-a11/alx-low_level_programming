@@ -1,17 +1,6 @@
 #include "main.h"
 
 /**
- * is_prime_number - Get 1 or 0 for is a prime number
- * @n: number parameter
- * Return: 1 or 0
-*/
-
-int is_prime_number(int n)
-{
-	return (helperFunc(n, 2));
-}
-
-/**
  * helperFunc - Helper funtion to get is prime
  * @n: number parameter
  * @i: base parameter
@@ -28,4 +17,15 @@ int helperFunc(int n, int i)
 	else if (n % i == 0)
 		return (0);
 	return (helperFunc(n, i + 1));
+}
+
+/**
+ * is_prime_number - Get 1 or 0 for is a prime number
+ * @n: number parameter
+ * Return: 1 or 0
+*/
+
+int is_prime_number(int n)
+{
+	return (helperFunc(n, 2));
 }
