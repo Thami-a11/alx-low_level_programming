@@ -24,12 +24,12 @@ int main(int argc, char *argv[])
 	{
 		n = atoi(argv[i]);
 
-		if (!(isdigit(n)))
+		if (isdigit(n))
 		{
-			printf("Error\n");
-			return (1);
+			added += n;
 		}
-		added += n;
+		printf("Error\n");
+		return (1);
 	}
 	printf("%d\n", added);
 	return (0);
