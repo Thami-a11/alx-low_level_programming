@@ -20,22 +20,15 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	else
+	for (i = 0; i < argc; i++)
 	{
-		for (i = 0; i < argc; i++)
+		if (!isdigit(argv[i]))
 		{
-			if (isdigit(argv[i]))
-			{
-				added += atoi(argv[i]);
-				printf("%d\n", added);
-				return (0);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
+		added += atoi(argv[i]);
 	}
+	printf("%d\n", added);
 	return (0);
 }
