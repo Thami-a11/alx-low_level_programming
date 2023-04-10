@@ -8,6 +8,7 @@
  * @argv: array of argument
  * Return:0 or 1
  */
+
 int main(int argc, char *argv[])
 {
 	int added, i;
@@ -19,19 +20,22 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-
-	for (i = 0; i < argc; i++)
+	else
 	{
-		if (isdigit(argv[i]))
+		for (i = 0; i < argc; i++)
 		{
-			added += atoi(argv[i]);
-			printf("%d\n", added);
-			return (0);
-		}
-		else
-		{
-			printf("Error\n");
-			return (0);
+			if (isdigit(argv[i]))
+			{
+				added += atoi(argv[i]);
+				printf("%d\n", added);
+				return (0);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
+	return (0);
 }
