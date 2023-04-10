@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int added, i;
+	int added, i, n;
 
 	added = 0;
 
@@ -22,12 +22,14 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < argc; i++)
 	{
-		if (!isdigit(argv[i]))
+		n = atoi(argv[i]);
+
+		if (!isdigit(n))
 		{
 			printf("Error\n");
 			return (1);
 		}
-		added += atoi(argv[i]);
+		added += n;
 	}
 	printf("%d\n", added);
 	return (0);
