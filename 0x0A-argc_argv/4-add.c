@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned int added, i, n;
+       	int added, i, n;
 
 	added = 0;
 
