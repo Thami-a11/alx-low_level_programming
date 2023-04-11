@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strdup - copy string and allocate to memory
@@ -19,7 +20,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	l = _strlen(str) + 1;
+	l = strlen(str) + 1;
 	c = malloc(l * sizeof(char));
 	if (c == NULL)
 	{
