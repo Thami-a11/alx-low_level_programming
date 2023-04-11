@@ -11,7 +11,7 @@
 
 char *_strdup(char *str)
 {
-	int l;
+	int l, i;
 
 	char *c;
 
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (int i = 0; i < l; i++)
+	for (i = 0; i < l; i++)
 	{
 		c[i] = str[i];
 	}
