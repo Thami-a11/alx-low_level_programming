@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == NULL)
 	{
-		return ("");
+		return ("s1 ");
 	}
 
 	ls1 = strlen(s1);
