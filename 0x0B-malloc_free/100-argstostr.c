@@ -11,7 +11,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i, j, l, n;
+	int i, j, l, n, Tl;
 
 	char *s;
 
@@ -26,9 +26,10 @@ char *argstostr(int ac, char **av)
 
 	{
 		l = strlen(av[i]);
+		Tl = l + 1;
 	}
 
-	s = malloc(sizeof(char) * l + 1);
+	s = malloc(sizeof(char) * Tl);
 
 	if (s == NULL)
 		return (NULL);
