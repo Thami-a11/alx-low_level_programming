@@ -20,19 +20,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return ("");
 	}
 
-	while (*s1 != '\0')
-	{
-		s1++;
-		i++;
-		strlen1 = i;
-	}
-
-	while (*s2 != '\0')
-	{
-		s2++;
-		i++;
-		strlen2 = i;
-	}
+	for (strlen1 = 0; s1[strlen1] != '\0'; strlen1++)
+		;
+	for (strlen2 = 0; s2[strlen2] != '\0'; strlen2++)
+		;
 
 	if (n >= strlen2)
 	{
