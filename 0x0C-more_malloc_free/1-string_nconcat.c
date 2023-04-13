@@ -20,22 +20,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return ("");
 	}
 
-	while (s1 != '\0')
+	while (*s1 != '\0')
 	{
-		s1[i];
+		s1++;
 		i++;
 		strlen1 = i;
 	}
 
-	while (s2 != '\0')
-        {
-                s2[i];
-                i++;
-                strlen2 = i;
-        }
+	while (*s2 != '\0')
+	{
+		s2++;
+		i++;
+		strlen2 = i;
+	}
 
 	str = malloc(conlen);
-	if(str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (i = 0; i < strlen1; i++)
