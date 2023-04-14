@@ -19,13 +19,13 @@ int *array_range(int min, int max)
 
 	s = max - min + 1;
 
-	pt = malloc(s * sizeof(char));
+	pt = malloc(s * sizeof(int));
 
 	if (pt == NULL)
 		return (NULL);
 
-	for (i = 0; i <= s; i++, min++)
-		pt[i] = min;
+	for (i = 0; i < s; i++)
+		pt[i] = min + 1;
 
 	return (pt);
 }
