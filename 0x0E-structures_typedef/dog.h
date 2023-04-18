@@ -3,11 +3,11 @@
 
 /**
  * struct dog - Dog
- * @name: name 
- * @age: age 
+ * @name: name
+ * @age: age
  * @owner: owner
  * Desc: header file
-*/                                                                                                                                                                                                                           
+*/
 
 typedef struct dog
 {
